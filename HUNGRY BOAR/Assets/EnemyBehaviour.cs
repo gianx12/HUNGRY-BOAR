@@ -6,13 +6,22 @@ public class EnemyBehaviour : MonoBehaviour
 {
 
     private float moveSpeed = 4f;
-
-    Rigidbody2D myRigidBody;
+    public int damage;
+    public PlayerLife playerLife;
+    private Rigidbody2D myRigidBody;
  
 
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            playerLife.TakeDamage(damage);
+        }
     }
 
     void Update()

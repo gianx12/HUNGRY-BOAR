@@ -6,8 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController2D controller;
+    public Joystick joystick;
+
     float horizontalMove = 0f;
-    public float runSpeed = 40f;
+    public float runSpeed = 0.2f;
+
     bool jump = false;
     bool crouch = false;
 
@@ -15,17 +18,30 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+       //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; tastiera
+        //horizontalMove = joystick.Horizontal * runSpeed; input raw, troppo sensibile
+        if (joystick.Horizontal >= .2f)
+        {
+            horizontalMove = runSpeed;
+        } else if (joystick.Horizontal <= -.2f)
+        {
+            horizontalMove = -runSpeed;
+        } else
+        {
+            horizontalMove = 0f;
+        }
 
-        if (Input.GetButtonDown("Jump"))
+        float verticalMove = joystick.Vertical;
+
+        if (verticalMove >= .5f)            //if(Input.GetButtonDown("Jump")
         {
             jump = true;
         }
 
-        if (Input.GetButtonDown("Crouch"))
+        if (verticalMove <= -.5f)   // if (Input.GetButtonDown("Crouch")
         {
             crouch = true;
-        } else if (Input.GetButtonUp("Crouch"))
+        } else   //else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
         }

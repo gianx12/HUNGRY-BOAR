@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController2D controller;
     public Joystick joystick;
+    public Animator animator;
 
     float horizontalMove = 0f;
     public float runSpeed = 0.2f;
@@ -18,11 +19,14 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
+     
+
         //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; tastiera
         //horizontalMove = joystick.Horizontal * runSpeed; input raw, troppo sensibile
         if (joystick.Horizontal >= .2f)
         {
             horizontalMove = runSpeed;
+          
         }
         else if (joystick.Horizontal <= -.2f)
         {

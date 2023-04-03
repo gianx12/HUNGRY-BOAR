@@ -24,6 +24,7 @@ public class Trash : MonoBehaviour
         {
             Destroy(gameObject);
             ScoreText.instance.IncreaseScore(value);
+            FindObjectOfType<AudioManager>().Play("PlayerEat");
         }
     }
 }

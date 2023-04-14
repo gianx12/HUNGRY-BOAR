@@ -47,3 +47,6 @@ TagManager:
   - name: Terrain
     uniqueID: 3752795093
     locked: 0
+  - name: Controller
+    uniqueID: 3667619753
+    locked: 0

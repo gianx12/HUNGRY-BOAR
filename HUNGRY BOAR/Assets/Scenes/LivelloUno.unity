@@ -502,7 +502,7 @@ SpriteRenderer:
   m_SortingLayerID: 906086751
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdfa926720788184eb23c0a9a71ec9ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 830bb3bfbd47b644c9ae24a15a3ed6bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -521,8 +521,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163907648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 1.912282, z: 0.66202307}
-  m_LocalScale: {x: 2.071686, y: 1.6391444, z: 1}
+  m_LocalPosition: {x: -20.5217, y: 2.0526, z: 0.66202307}
+  m_LocalScale: {x: 2.8166642, y: 2.4231472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 779751138}
@@ -7855,8 +7855,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565904751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.4, y: 1.912282, z: 0.66202307}
-  m_LocalScale: {x: 2.071686, y: 1.6391444, z: 1}
+  m_LocalPosition: {x: 14.9878, y: 2.0626, z: 0.66202307}
+  m_LocalScale: {x: 1.826092, y: 1.6188948, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 779751138}
@@ -7903,7 +7903,7 @@ SpriteRenderer:
   m_SortingLayerID: 906086751
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdfa926720788184eb23c0a9a71ec9ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2a4b97c604f92e46bd5e354b5ddcbf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7949,7 +7949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: 395}
+  m_AnchoredPosition: {x: -325, y: 241}
   m_SizeDelta: {x: 295.19, y: 78.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582646842
@@ -7981,8 +7981,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279506175
-  m_fontColor: {r: 1, g: 0.08027446, b: 0.08027446, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7999,13 +7999,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.07
-  m_fontSizeBase: 47.07
+  m_fontSize: 45.07
+  m_fontSizeBase: 45.07
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

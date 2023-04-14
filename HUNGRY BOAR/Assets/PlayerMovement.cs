@@ -19,13 +19,14 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-     
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; tastiera
         //horizontalMove = joystick.Horizontal * runSpeed; input raw, troppo sensibile
         if (joystick.Horizontal >= .2f)
         {
             horizontalMove = runSpeed;
+            
           
         }
         else if (joystick.Horizontal <= -.2f)
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (verticalMove >= .5f)            //if(Input.GetButtonDown("Jump")
         {
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
 
         if (verticalMove <= -.5f)   // if (Input.GetButtonDown("Crouch")
@@ -53,6 +55,18 @@ public class PlayerMovement : MonoBehaviour
             crouch = false;
         }
     }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
+
+    public void OnCrouching(bool isCrouching)
+    {
+        animator.SetBool("IsCrouching", isCrouching);
+    }
+
 
     void FixedUpdate()
     {

@@ -10,4 +10,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LivelloUno");
     }
 
+    public void SwitchToLeaderboard()
+    {
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void SwitchToLogin()
+    {
+        SceneManager.LoadScene("Login");
+    }
+
+    public void SwitchToMainMenu()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
 }

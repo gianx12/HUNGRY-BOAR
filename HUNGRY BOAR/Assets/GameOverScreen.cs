@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     //public Text pointsText;
+    public PlayfabManager playfabManager;
 
-    public void Setup(int score)
+    public void Setup()
     {
         gameObject.SetActive(true);
+        playfabManager.SendLeaderboard(ScoreText.instance.GetScore());
         //pointsText.text = score.ToString() + " MONNEZZA";
     }
 

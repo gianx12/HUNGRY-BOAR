@@ -23,6 +23,11 @@ public class ScoreText : MonoBehaviour
 
     }
 
+    public int GetScore()
+    {
+        return this.scoreNumber;
+    }
+
     public void IncreaseScore(int v)
     {
         scoreNumber += v;

@@ -28,11 +28,13 @@ public class PlayerLife : MonoBehaviour
     {
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
+        FindObjectOfType<AudioManager>().Play("Death");
+        FindObjectOfType<AudioManager>().Stop("Theme");
     }
 
     private void RestartLevel()
     {
-        GameOverScreen.Setup(0);
+        GameOverScreen.Setup();
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

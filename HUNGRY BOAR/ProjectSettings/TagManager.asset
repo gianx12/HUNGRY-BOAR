@@ -12,7 +12,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - GameOver
   - 
   - 
   - 
@@ -50,4 +50,7 @@ TagManager:
     locked: 0
   - name: Controller
     uniqueID: 3667619753
+    locked: 0
+  - name: GameOver
+    uniqueID: 3399867023
     locked: 0

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
-
+    public GameOverScreen GameOverScreen;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -32,6 +32,7 @@ public class PlayerLife : MonoBehaviour
 
     private void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameOverScreen.Setup(0);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

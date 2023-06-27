@@ -15,11 +15,13 @@ EditorBuildSettings:
     path: Assets/Scenes/LivelloUno.unity
     guid: 9f34a6b0c68629a4a8d6ead0f552da0f
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/Login.unity
     guid: bdb96c469ab7def40830bef71e61e29f
-  - enabled: 1
-    path: Assets/Scenes/Leaderboard.unity
-    guid: 438dca6293b4c5442978c8ad3e9b7e52
+=======
+    path: Assets/Scenes/EndScene.unity
+    guid: d6a76deb969033543ab5eebff9b0e363
+>>>>>>> Stashed changes
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
